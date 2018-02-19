@@ -34,7 +34,10 @@
   .order-form__col {
     width: 50%;
     @include tablets{
+        display: flex;
         width: 100%;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -62,6 +65,8 @@
 
 .order-form__radio{
     cursor: pointer;
+    margin: 5px;
+    margin-left: 10px;
 }
 
 .order-form__lebel {
@@ -77,6 +82,7 @@
     color: #fff;
     font-family: 'UbuntuLight';
     font-size: 0.875rem;
+    transform: translate(0, -20%);
 }
 
 .order-form__input, .order-form__textarea {
@@ -92,6 +98,7 @@
 .order-form__textarea {
     resize: none;
     height: 110px;
+    padding-left:0;
 }
 
 .order-form__radio-elem {
@@ -122,8 +129,9 @@ background-color: #fff;
 }
 
 
-
-
+.order-form__btn-group{
+    margin: 10px;
+}
 
 
 .order-form__radio-fake:after{
@@ -170,3 +178,8 @@ background-color: #fff;
     text-align: right;
     color: red;
 }
+
+
+// .order-form__label-wrap:last-child{
+//     padding-left: 0;
+// }

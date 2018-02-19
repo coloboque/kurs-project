@@ -30,26 +30,18 @@ $('.menu-acco__item').click(function(){
       }
     });
 
+// мобильное меню
+
+$('.mobile-menu').click(function(){
+    $('.mob-menu').addClass('mob-menu_active');
+});
 
 
-// var menuacco__item = document.querySelectorAll(".menu-acco__item");
-// var active2;
-// menuacco__item.forEach(function(item, i, menuacco__item){
-// 	item.addEventListener('click', function(e){
-// 		this.classList.add('menu-acco__item_active');
-// 		if (active2) {    
-// 				active2.classList.remove('menu-acco__item_active'); 
-// 				}	
-					
-// 			if (active2 == this){
-// 				active2 = 0;
-// 				}
-	 
-// 			else {
-// 				active2 = this;
-// 				}
-// 	});
-// });
+$('.mob-menu__close').click(function(){
+    $('.mob-menu').toggleClass('mob-menu_active');
+});
+
+
 
 
 $('#order-form').on('submit', submitForm);

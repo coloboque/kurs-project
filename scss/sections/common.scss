@@ -83,54 +83,65 @@
 
 
 
-// .sidenav {
-//         position: fixed;
-//         top: rem(90px);
-//         right:rem(55px);
-//         z-index: 11;
-//         @include tablets{
-//             display: none;
-//         }
-// }
-    
-//     .sidenav__list{
-//         position: relative;
-//         display: inline-block;
-        
-//         list-style: none;
-//     }
-    
-//     .sidenav__elem{
-//         position: relative;
-//         display: block;
-//         margin: rem(16px);
-//         width: rem(16px);
-//         height: rem(16px);
-//         cursor: pointer;
-//         border-radius: 50%;
-//     }
-    
-//     .sidenav__link{
-//     width: 100%;
-//     height: 100%;
-//     border-radius: 50%;
-//     background-color: white !important;
-//     /* transition: background-color 0.3s; */
-//     cursor: pointer;
-//     position: absolute;
-//     transform: scale(0.6);
-//     }
-    
-//     .sidenav__elem--active{
-//     box-shadow: 0 0 0 rem(2px) white;
-//     }
-    
-    
-//     .sidenav__link--active{
-//         // transform: scale(0.5);
-//     }
-
 
     .mob-menu{
-        display: none;
+        // display: none;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -100%;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: #2f3234;
+        z-index: 100000000000;
+        transition: 0.3s;
+        opacity: 1;
+        &_active{
+            top:0%;
+            opacity: 1;
+        }
+        &__item{
+            list-style: none;
+            text-align: center;
+           &:last-child{
+            .mob-menu__link{
+                &:after{
+                  content: none;  
+                }
+            }
+           } 
+        }
+
+        &__link{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            color: #FFF;
+            padding: 20px;
+            text-transform: uppercase;
+            font-size: rem(24px);
+            line-height: rem(24px);
+            text-decoration: none;
+            &:after{
+                content: ' ';
+                position: absolute;
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                bottom: 0;
+                left:50%;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+            }
+        }
+
+        &__close{
+          position: absolute;
+          top: 5%;
+          right: 5%; 
+        }
     }
+
