@@ -1,0 +1,213 @@
+.section_team{
+background: url('../img/team-bg.jpg') center center no-repeat;
+background-size: cover;  
+position: relative; 
+}
+
+.section-title_team{
+    color: #f9b43b;
+    text-align: left;
+    margin-top: rem(95px);
+
+    @include tablets{
+      font-size: rem(82px);
+      text-align: center;
+      margin-top: 39%;
+      @include phones{
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 10%;
+      }
+    }
+
+ 
+
+}
+
+.container_team{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: rgba(#2f3234, .93); 
+    // display: flex;
+    // justify-content: center;
+    // padding-top: rem(50px);
+    @include tablets{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      // padding: 82px;
+    }
+    
+}
+
+.team__content{
+  
+  width: 65%;
+  height: 100%;
+  @include tablets{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+  }
+  @include phones{
+    width: 100%;
+  }
+}
+
+.team-acco{
+ 
+ height: 100%;
+ margin-top: rem(40px);
+ @include tablets{
+  margin-top: rem(50px);
+ }
+ @include phones{
+  margin-top: 20%;
+ }
+
+}
+
+
+// может это можно записать объеденив
+.team-acco__item{
+  margin-bottom:2rem;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+    @include tablets {
+      justify-content: center;
+      margin-bottom:rem(35px);
+    }
+    @include phones{
+      justify-content: center;
+    }
+}
+
+.team-acco__item--active {
+  @include tablets {
+    justify-content: center;
+  }
+}
+.team-acco__pic{
+  flex: none;
+    background-color: #f9b43b;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    @include tablets{
+
+    }
+   
+}
+
+
+
+.team-acco__trigger {
+font-family: Gagalin;
+font-size: rem(14px);
+text-decoration: none;
+color: #fff;
+display: flex;
+align-items: center;
+// text-align: left;
+white-space: nowrap;
+  @include phones {
+    font-size: 25px;
+  }
+  @include tablets {
+    font-size: 25px;
+  }
+
+  &:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: $yellow;
+    border-bottom-width: 0px;
+    margin-right: 5px;
+
+  }
+ 
+}
+
+  .team-acco__text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 20px;
+    color: #fff;
+    @include tablets{
+      padding: 0;
+      font-size: rem(16px);
+      width: 90%;
+      padding-top: 20px;
+    }
+  }
+
+.team-acco__content {
+  padding: 15px;
+  display: none;
+
+
+  }
+
+.team-acco__item--active {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+    .team-acco__trigger {
+      color: $yellow;
+  
+      &:before {
+        transform: rotate(-180deg);
+      }
+    }
+  @include tablets{
+    align-items: center;
+    margin-bottom:1rem;
+  }
+    .team-acco__content {
+      display: flex;
+      flex-direction: row;
+      
+      // align-items: center;
+      // padding-top: rem(15px);
+      @include tablets{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+
+  .team-acco__text-title{
+    font-weight: 600;
+    // margin-bottom: 20px;
+  }
+
+  .team-acco__text-content{
+padding: 0;
+margin: 0;
+line-height: 1.7;
+
+@include tablets{
+  margin-top: 1rem;
+
+}
+  }
+
+
+// .team__content{
+//   flex-direction: column;
+//   display: flex;
+//   // align-items: center;
+// }

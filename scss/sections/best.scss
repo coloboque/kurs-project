@@ -1,0 +1,71 @@
+.section_best{	
+	background-image: url('../img/best-bg.png');
+	background-size: cover;
+	}
+
+	.section-title_best{
+		color:#000;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.best__title{
+		font-family: Lifehack;
+		color: #000;
+		font-size: rem(24px); 
+		margin: 5%;
+		@include phones{
+			margin: 0;
+		}
+		}
+
+	.container_best{
+justify-content: center;
+	}
+
+
+
+.features{
+	display: flex;
+	justify-content: space-between;
+	@include phones{
+		flex-direction: column;
+	}
+	}
+
+	.features__item{
+		display: flex;
+		margin-right: rem(20px);
+		flex-direction: column;
+		align-content: flex-start;
+		justify-content: flex-start;
+		text-align: center;
+
+		&--natural{
+			margin-right: 0;
+		}
+
+		@include phones{
+			flex-direction: row;
+			text-align: left;
+			align-items: center;
+			
+		}
+	}
+
+
+	
+
+		.fetures__icon{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		height: 100px;
+		margin-bottom: 23px;
+		@include phones{
+			width: 200px;
+			margin-right: 20px;
+		}
+		}
+		

@@ -1,0 +1,136 @@
+.btn {
+	display: inline-block;
+	border: 0;
+    border-radius: rem(5px);
+	background-color: #e45028;
+	padding:rem(10px);
+    transition: 0.3s;
+    color: #FFF;
+	text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    &:focus {
+       
+        outline: 0;
+    }
+    }
+    
+
+
+	
+	.btn__link{
+	color: #FFF;
+	text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+	}
+
+	.btn__black{
+    color:#fff;
+    text-transform: uppercase;
+    background: rgb(39, 39, 39);
+    float: left;
+    }
+    
+    .btn_transparent{
+    background: transparent;
+	}
+
+#fp-nav {
+    top: 100px !important;
+    right: 100px;
+    & span{
+        background: transparent !important;
+    }
+     
+    @include tablets{
+        display: none !important;
+    }
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        background: transparent !important;
+    }
+   
+    a { 
+        &:hover:before, &.active::before{
+            width: 16px;
+            height: 16px;
+        }
+
+        &::before, &::after {
+            border: 1px solid #fff !important;
+            transition: 0.3s;
+            content: '';
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) !important;
+            border-radius: 50%;
+        }
+
+        &::after {
+            width: 6px;
+            height: 6px;
+            background-color: #fff !important;
+        }
+    }
+}
+
+
+
+
+
+// .sidenav {
+//         position: fixed;
+//         top: rem(90px);
+//         right:rem(55px);
+//         z-index: 11;
+//         @include tablets{
+//             display: none;
+//         }
+// }
+    
+//     .sidenav__list{
+//         position: relative;
+//         display: inline-block;
+        
+//         list-style: none;
+//     }
+    
+//     .sidenav__elem{
+//         position: relative;
+//         display: block;
+//         margin: rem(16px);
+//         width: rem(16px);
+//         height: rem(16px);
+//         cursor: pointer;
+//         border-radius: 50%;
+//     }
+    
+//     .sidenav__link{
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 50%;
+//     background-color: white !important;
+//     /* transition: background-color 0.3s; */
+//     cursor: pointer;
+//     position: absolute;
+//     transform: scale(0.6);
+//     }
+    
+//     .sidenav__elem--active{
+//     box-shadow: 0 0 0 rem(2px) white;
+//     }
+    
+    
+//     .sidenav__link--active{
+//         // transform: scale(0.5);
+//     }
+
+
+    .mob-menu{
+        display: none;
+    }

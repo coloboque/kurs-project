@@ -1,0 +1,140 @@
+.section_welcome {	
+	background-image: url('../img/welcome-bg.jpg');
+	background-size: cover;
+	}
+
+.welcome-header{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* border: rem(1px) solid red; */
+	padding: rem(12px);
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-family: UbuntuMedium;
+	font-size: rem(13px);
+
+}	
+
+.menu__list{
+	color:#fff;
+	list-style: disc;
+	display: inline-block;
+	vertical-align: middle;
+	@include tablets{
+		display:none;
+	}
+}
+
+.menu__item {
+	padding-right: rem(30px);
+   	float: left;
+}
+
+.menu__item:first-child{ 
+	list-style: none;
+}
+
+.menu__link{
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+
+.mobile-menu{
+	display: none;
+@include tablets {
+	vertical-align: middle;
+	position: relative;
+	height: 22px;
+	align-items: center;
+	margin-left: 30px;
+	display: flex;
+}
+}
+
+	.mobile-menu__link{
+		&, &:before, &:after {
+			background: #fff;
+			width: rem(24px);
+			height: rem(5px);
+			border-radius: rem(3px);
+			}
+			&:before, &:after{
+				content: "";
+				display: block;
+				position: absolute;
+			}
+			&:before{
+				top:0;
+			}
+
+			&:after{
+				bottom:0;
+			}
+		}		
+	
+
+
+	.welcome-content{
+		height: 100%;
+		width: 100%;
+		/* border: rem(2px) solid blue; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include tablets {
+			flex-direction: column;
+			justify-content: space-evenly;
+			
+		}
+		}
+
+	.welcome-content__left{	
+		/* border: rem(1px) solid red; */
+		display: flex;
+		flex-basis: 50%;
+		justify-content: center;
+		align-items: center;
+		}
+		
+		.welcome-content__right{
+		/* border: rem(1px) solid red; */
+		display: flex;
+		flex-basis: 50%;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+		@include tablets{
+			align-items: center;
+			
+		}
+		}
+		
+		.section-title_welcome{
+			color: #f9b43b;
+		}
+
+		.welcome-content__description{
+		margin: 0;
+			font-family: Lifehack;
+			color: #fff;
+			font-size: rem(65px);
+			font-weight: normal;
+			
+			@include tablets {
+				text-align:center;
+			}
+		}
+
+		.section__arrow-link{
+			display: block;
+			margin-bottom: rem(50px);
+		}

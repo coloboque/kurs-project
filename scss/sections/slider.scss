@@ -1,0 +1,317 @@
+.section_slider{
+    background: linear-gradient(to top, #f9b43b 20%, #eb8d38 50%, #f9b43b 80%);
+  }
+
+  .section-title__slider{
+    color: #fff;
+    text-align: left;
+    line-height: 1.2;
+    @include tablets{
+        text-align: center;
+    }
+    @include phones{
+        font-size: rem(60px);
+    }
+
+   
+}
+
+.container_slider{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+// .hamburger-kkal{
+//     position: absolute;
+//     display: inline-block;
+//     bottom: 0;
+//     left: 0;
+//     font-size: 60px;
+//     @include tablets{
+//         left: auto;
+//     bottom: auto;
+//     right: 0;
+//     top: 0;
+//     }
+//     .icon-kkal{
+//         font-size: 60px;
+//     }
+//     &__num {
+//         position: relative;
+//         font-family: 'Gagalin';
+//         color: #fff;
+//         font-size: 20px;
+//         margin-bottom: 10px;
+//     }
+//     &__text{
+//         position: relative;
+//     font-family: 'Gagalin';
+//     color: #fff;
+//     font-size: 14px;
+//     }
+// }
+
+.composition{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    &:hover{
+        .composition__drop{
+            opacity: 1;
+            top: 0;
+        }
+    }
+
+    &__text{
+        font-family: Gagalin;
+        color: #fff;
+        font-size: rem(14px);
+     
+    }
+    &__btn{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+        background-color: rgba(277, 80, 40, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .icon-burger{
+            font-size: 40px;
+        }
+       
+    }
+    &__wrap{
+        display: flex;
+    }
+    &__drop{
+        position: absolute;
+    left: 90px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 20px;
+    top: -1000px;
+    opacity: 0;
+    transition: opacity 1.3s;
+    }
+    &__table-td{
+        padding: 5px;
+        .icon{
+            font-size: 30px;
+        }
+    }
+}
+
+
+.slider {
+	position: relative;
+	min-height: 475px;
+	width: 100%;
+	height: 50%;
+	
+	@include tablets() { 
+		height: 100%;
+        width: 100%;
+    
+	}
+    @include phones{
+        width: 100%;
+        height: 100%;
+        min-width: 380px;
+    }
+
+	&__list {
+		height: 100%;
+		overflow: hidden;
+	}
+
+	&__item {
+		display: flex;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		float: left;
+
+
+		@include tablets() { 
+			flex-direction: column; 
+			justify-content: center; 
+			align-items: center;
+		}		
+	}
+
+	&__col {
+		display: flex;
+		flex-direction: column; 
+		justify-content: space-between; 
+		float: left;
+		width: 50%;
+		height: 100%;
+		padding: 15px;
+
+		@include tablets() { 
+            height:50%;
+            min-width: 400px;
+            @include phones{
+                width: 80%;
+                min-width: 80%;
+                max-height: 300px;
+            }
+            
+        }
+
+    
+        &_right{
+           
+            @include tablets{
+                width: 70%;
+                justify-content: space-around; 
+                max-height: 500px;
+                @include phones{
+                    max-height: 500px;
+                }
+            }
+        }
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+        background-size: 100% auto;  
+        margin: 0 auto;
+        @include tablets{
+          
+        }
+	}
+
+	&__text {
+		// font-family: 'UbuntuLight';
+		font-size: rem(14px);
+		line-height: 2;
+		color: #fff;
+		text-align: left;
+		
+		@include tablets() { 
+            text-align: center;
+            
+                font-size: 1rem;
+            
+		}
+	}
+
+	&__info	{
+		display: flex;
+		
+		.btn {
+			align-self: flex-end;
+		}
+
+		@include tablets() { 
+			justify-content: center;
+		}
+	}
+
+	&__price {
+		color: $orange;
+		font-size: rem(24px);
+		font-family: 'Gagalin';
+		margin-right: 20px;
+		
+	}
+
+	&__price span {
+		color: $orange;
+		font-size: rem(72px);
+		font-family: 'Gagalin';
+		line-height: 1; 
+	}
+
+	&__arrow {
+        text-decoration: none;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		transform: translate(0 , -50%);
+		z-index: 100;
+		
+		
+		
+		&_left {
+		left: 25px;
+        transform: rotate(90deg);
+
+		}
+
+		&_right {
+			right: 25px;
+			transform: rotate(-90deg);
+		
+		}		
+	}
+
+}
+
+
+.hamburger-kkal {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	padding-top: 30px;
+	opacity: 0.5;
+	
+
+	.icon-kkal {
+		position: absolute;
+		display: inline-block;
+		top: 0;
+		left: 0;
+		font-size: 60px;
+	} 
+
+	&__num {
+		position: relative;
+		font-family: 'Gagalin';
+		color: #fff;
+		font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+	}
+
+	&__text {
+        text-align: center;
+		position: relative;
+		font-family: 'Gagalin';
+		color: #fff;
+		font-size: 14px;
+	}
+
+	@include tablets() { 
+		left: auto;
+		bottom: auto;
+		right: 0;
+		top: 0; 
+	}
+}
+
+
+.composition__table{
+    text-align: left;
+}
+
+.icon__drop{
+    font-size: 40px;
+}
+
+.icon-buns{
+    font-size: 30px;
+}

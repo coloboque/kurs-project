@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mr Burger</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+
+	
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['welcome', 'best', 'burgslider', 'team', 'burgermenu', 'reviews', 'order', 'contacts'],
+				menu: '#menu',
+				scrollingSpeed: 1000,
+				navigation: true,
+				navigationPosition: 'right'
+
+			});
+		});
+	</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider_list').slick({
+    setting-name: setting-value
+  });
+});
+</script>
+
+
+</head>
+<body>
+	<!--[if де IE 9]
+		<p class="browsernew"> Ваш браузер устарел! Пожалуйста, обновите его. </p>
+	<![endif]-->
+
+<div id="fullpage" class="wrapper">
+	<section class="section section_welcome" data-anchor="welcome">
+		<div class="container container_welcome">
+				<header class="welcome-header">
+					<a class="logo">
+						<img src="icons/logo.svg" alt="Mr Burger">
+					</a>
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#welcome" class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="#burgslider" class="menu__link">Бургеры</a></li>
+							<li class="menu__item"><a href="#team" class="menu__link">Команда</a></li>
+							<li class="menu__item"><a href="#burgermenu" class="menu__link">Меню</a></li>
+							<li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
+							<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+						</ul>
+					<div class="btn"><a href="#order" class="btn__link">Заказать</a>	</div>
+					<div class="mobile-menu">
+							<a class="mobile-menu__link" href="#order"></a>
+						</div>	
+					</nav>		
+				</header>
+			<div class="welcome-content">
+				<div class="welcome-content__left">
+					<img src="img/burgers.png" alt="">
+				</div>
+				<div class="welcome-content__right">
+					<h2 class="section-title section-title_welcome">Мы делаем</h2>
+					<h3 class="welcome-content__description">натуральные бургеры</h3>
+				</div>
+			</div>
+			<div class="section__arrow">
+				<a href="#2" class="section__arrow-link" ><img src="icons/arrow-scroll.svg"></a>
+			</div>
+		
+		</div>
+	</section>	
+	<section class="section section_best" data-anchor="best">
+		<div class="container container_best">
+		  <h2 class="section-title section-title_best">Мы лучшие</h2>
+			<div class="features">
+				<div class="features__item features__item--fresh">
+					<div class="fetures__icon">
+						<img src="icons/meat.svg" alt="">
+					</div>
+					<div class="best__desc">
+						<div class="best__title"> 
+							100% свежее мясо
+						</div>
+							<p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+					</div>
+				</div>
+				<div class="features__item features__item--hand">
+					<div class="fetures__icon">
+						<img src="icons/hand.svg" alt="">
+					</div>
+					<div class="best__desv">
+						<div class="best__title">Ручная работа</div>
+						<p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+					</div>
+				</div>
+				<div class="features__item features__item--natural">
+					<div class="fetures__icon">
+						<img src="icons/natural.svg" alt="">
+					</div>
+					<div class="best__desc">
+						<div class="best__title">Натуральные игнридиенты</div>
+							<p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	  </section>
+		<section class="section section_slider" data-anchor="burgslider">
+			<div class="container container_slider">
+					<a href="#" class="slider__arrow slider__arrow_left">
+							<span class="icon-arrow-scroll"></span>
+							</a>
+							<a href="#" class="slider__arrow slider__arrow_right">
+									<span class="icon-arrow-scroll"></span>
+							</a>
+
+				<div class="slider">	
+					<ul class="slider__list">
+						<li class="slider__item">
+							<div class="slider__col">
+								<div class="slider__img" style="background-image: url(../img/black-burger.png);"></div>
+							</div>
+							<div class="slider__col slider__col_right">
+								<h2 class="section-title section-title__slider">Dark beef Burger</h2>
+									<div class="slider__text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam culpa provident nulla odio, itaque incidunt maxime molestias maiores in aliquam totam voluptatibus officia? 
+									</div>
+										<div class="slider__info">
+											<div class="slider__price">
+												<span>500</span>рублей
+											</div>
+											<div class="btn"><a href="#order" class="btn__link">Заказать</a>	</div>
+											
+										</div>
+							</div>
+
+							<div class="composition">
+									<div class="composition__wrap">
+										<div class="composition__btn">
+											<span class="icon-burger"></span>
+											<div class="composition__text">Состав</div>
+										</div>
+			
+										<div class="composition__drop">
+											<table class="composition__table">
+												<tr class="composition__table-tr">
+													<td class="composition__table-td"><span class="icon__drop icon-beef"></span></td>
+													<td class="composition__table-td">Говядина</td>
+													<td class="composition__table-td">300г</td>
+												</tr>
+												<tr class="composition__table-tr">
+													<td class="composition__table-td"><span class="icon__drop icon-buns"></span></td>
+													<td class="composition__table-td">Булочки</td>
+													<td class="composition__table-td">100г</td>
+												</tr>
+												<tr class="composition__table-tr">
+													<td class="composition__table-td"><span class="icon__drop icon-salad"></span></td>
+													<td class="composition__table-td">Зелень</td>
+													<td class="composition__table-td">70г</td>
+												</tr>
+												<tr class="composition__table-tr">
+													<td class="composition__table-td"><span class="icon__drop icon-sauce"></span></td>
+													<td class="composition__table-td">Соус</td>
+													<td class="composition__table-td">150г</td>
+												</tr>
+												<tr class="composition__table-tr">
+													<td class="composition__table-td"><span class="icon__drop icon-cucumber"></span></td>
+													<td class="composition__table-td">Овощи</td>
+													<td class="composition__table-td">200г</td>
+												</tr>
+												<tr class="composition__table-tr">
+													<td class="composition__table-td"><span class="icon__drop icon-cheese"></span></td>
+													<td class="composition__table-td">Сыр</td>
+													<td class="composition__table-td">80г</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+			
+								<div class="hamburger-kkal">
+									<span class="icon-kkal"></span>
+									<div class="hamburger-kkal__num">1200</div>
+									<div class="hamburger-kkal__text">ккал</div>
+								</div>
+						</li>
+					
+					</ul>
+				</div>
+
+			</div>
+		</section>
+	 
+		<section class="section section_team" data-anchor="team">
+			<div class="container container_team">
+				<div class="team__content">
+				<h2 class="section-title section-title_team">Команда</h2>
+				<ul class="team-acco">
+						<li class="team-acco__item">
+						  <a href="#" class="team-acco__trigger">Дэниел Редклифф</a>
+						  <div class="team-acco__content">
+								<div class="team-acco__pic" style="background-image: url(img/aphex.jpg)">
+							</div>
+							<div class="team-acco__text">
+							  <div class="team-acco__text-title">Оператор</div>
+							  <div class="team-acco__text-content">
+								
+								 С радостью поможет подобрать идеальный бургер и оформить заказ.  
+								  
+							  </div>
+							</div>
+						  </div>
+						</li>
+						<li class="team-acco__item">
+						  <a href="#" class="team-acco__trigger">Ричард Джеймс</a>
+						  <div class="team-acco__content">
+							<div class="team-acco__pic" style="background-image: url(img/aphex.jpg)">
+							</div>
+							<div class="team-acco__text">
+							  <div class="team-acco__text-title">Оператор</div>
+							  <div class="team-acco__text-content">
+								
+								С радостью поможет подобрать идеальный бургер и оформить заказ.  
+							
+							</div>
+						  </div>
+						</li>
+						<li class="team-acco__item">
+						  <a href="#" class="team-acco__trigger">Джейк Финн</a>
+						  <div class="team-acco__content">
+							<div class="team-acco__pic" style="background-image: url(img/aphex.jpg)">
+							</div>
+							<div class="team-acco__text">
+							  <div class="team-acco__text-title">Оператор</div>
+							  <div class="team-acco__text-content">
+								С радостью поможет подобрать идеальный бургер и оформить заказ.  
+							  </div>
+							</div>
+						  </div>
+						</li>
+						<li class="team-acco__item">
+						  <a href="#" class="team-acco__trigger">Николай Иванов</a>
+						  <div class="team-acco__content">
+							<div class="team-acco__pic" style="background-image: url(img/aphex.jpg)">
+							</div>
+							<div class="team-acco__text">
+							  <div class="team-acco__text-title">Оператор</div>
+							  <div class="team-acco__text-content">
+								С радостью поможет подобрать идеальный бургер и оформить заказ.  
+							  </div>
+							</div>
+						  </div>
+						</li>
+					  </ul>
+				</div>
+			</div>	
+		</section>
+		<section class="section section_menu" data-anchor="burgermenu">
+				<h2 class="section-title section-title_menu">Меню</h2>
+				<ul class="menu-acco">
+					<li class="menu-acco__item">
+						<a href="#" class="menu-acco__trigger" style="background-image: url(../img/m1.jpg)"><span class="menu-acco__trigger-text">Для мясоедов</span></a>
+						<div class="menu-acco__content">
+							<div class="menu-acco__desc">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nulla necessitatibus libero eum vitae pariatur, aliquid deleniti omnis. Omnis vel accusantium aut voluptas optio dicta obcaecati qui adipisci dolorum dignissimos molestias aliquam aliquid iure aperiam quidem numquam minus blanditiis quos esse accusamus earum iste temporibus, modi consectetur! Soluta, sapiente maiores.</p>
+						</div>
+						</div>
+					</li>
+					<li class="menu-acco__item">
+							<a href="#" class="menu-acco__trigger" style="background-image: url(../img/m2.jpg)"><span class="menu-acco__trigger-text">Вегетарианское</span></a>
+							<div class="menu-acco__content">
+									<div class="menu-acco__desc">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nulla necessitatibus libero eum vitae pariatur, aliquid deleniti omnis. Omnis vel accusantium aut voluptas optio dicta obcaecati qui adipisci dolorum dignissimos molestias aliquam aliquid iure aperiam quidem numquam minus blanditiis quos esse accusamus earum iste temporibus, modi consectetur! Soluta, sapiente maiores.</p>
+								</div>
+								</div>
+					</li>
+					<li class="menu-acco__item">
+							<a href="#" class="menu-acco__trigger" style="background-image: url(../img/m3.jpg)"><span class="menu-acco__trigger-text">Диетическое</span></a>
+							<div class="menu-acco__content">
+									<div class="menu-acco__desc">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nulla necessitatibus libero eum vitae pariatur, aliquid deleniti omnis. Omnis vel accusantium aut voluptas optio dicta obcaecati qui adipisci dolorum dignissimos molestias aliquam aliquid iure aperiam quidem numquam minus blanditiis quos esse accusamus earum iste temporibus, modi consectetur! Soluta, sapiente maiores.</p>
+								</div>
+								</div>
+					</li>					
+				</ul>
+		</section>
+
+
+
+		<section class="section section_reviews" data-anchor="reviews">
+						<ul class="reviews__list">
+							<li class="reviews__item" >
+								<div class="reviews__photo" style="background-image: url(img/p8.jpg);"></div>
+								<div class="reviews__info">
+									<div class="reviews__title">Test Testovic</div>
+									<div class="reviews__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione temporibus culpa impedit sapiente voluptas fugiat, 
+										veniam quaerat nostrum similique aliquam delectus rem incidunt molestiae natus praesentium.
+									</div>
+										<div class="reviews__btn">
+										<a href="#" class="btn btn__black btn__link">Подробнее</a>
+									</div>
+								</div>
+							</li>
+							<li class="reviews__item">
+								<div class="reviews__photo" style="background-image: url(img/p3.jpg)"></div>
+								<div class="reviews__info">
+									 <div class="reviews__title">Test Testovic</div>
+									<div class="reviews__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione temporibus culpa impedit sapiente voluptas fugiat, 
+										veniam quaerat nostrum similique aliquam delectus rem incidunt molestiae natus praesentium.
+									 </div>
+									 <div class="reviews__btn">
+										<a href="#" class="btn btn__black btn__link">Подробнее</a>
+									</div>
+								</div>
+							</li>
+							<li class="reviews__item">
+									<div class="reviews__photo" style="background-image: url(img/p5.jpg);"></div>
+									<div class="reviews__info">
+										<div class="reviews__title">Test Testovic</div>
+										<div class="reviews__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione temporibus culpa impedit sapiente voluptas fugiat, 
+											veniam quaerat nostrum similique aliquam delectus rem incidunt molestiae natus praesentium.
+										</div>
+										<div class="reviews__btn">
+											<a href="#" class="btn btn__black btn__link">Подробнее</a>
+										</div>
+									</div>
+								</li>
+								<li class="reviews__item">
+									<div class="reviews__photo" style="background-image: url(img/p2.jpg);"></div>
+									<div class="reviews__info">
+										 <div class="reviews__title">Test Testovic</div>
+										<div class="reviews__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione temporibus culpa impedit sapiente voluptas fugiat, 
+											veniam quaerat nostrum similique aliquam delectus rem incidunt molestiae natus praesentium.
+										 </div>
+										 <div class="reviews__btn">
+											<a href="#" class="btn btn__black btn__link">Подробнее</a>
+										</div>
+									</div>
+								</li>
+								<li class="reviews__item">
+										<div class="reviews__photo" style="background-image: url(img/p7.jpg);"></div>
+										<div class="reviews__info">
+											<div class="reviews__title">Test Testovic</div>
+											<div class="reviews__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione temporibus culpa impedit sapiente voluptas fugiat, 
+												veniam quaerat nostrum similique aliquam delectus rem incidunt molestiae natus praesentium.
+											</div>
+											<div class="reviews__btn">
+												<a href="#" class="btn btn__black btn__link">Подробнее</a>
+											</div>
+										</div>
+									</li>
+									<li class="reviews__item">
+										<div class="reviews__photo" style="background-image: url(img/p6.jpg);"></div>
+										<div class="reviews__info">
+											 <div class="reviews__title">Test Testovic</div>
+											<div class="reviews__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione temporibus culpa impedit sapiente voluptas fugiat, 
+												veniam quaerat nostrum similique aliquam delectus rem incidunt molestiae natus praesentium.
+											 </div>
+											 <div class="reviews__btn">
+												<a href="#" class="btn btn__black btn__link">Подробнее</a>
+											</div>
+										</div>
+									</li>
+									<li class="reviews__item">
+											<div class="reviews__photo" style="background-image: url(img/p4.jpg);"></div>
+											<div class="reviews__info">
+												<div class="reviews__title">Test Testovic</div>
+												<div class="reviews__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione temporibus culpa impedit sapiente voluptas fugiat, 
+													veniam quaerat nostrum similique aliquam delectus rem incidunt molestiae natus praesentium.
+												</div>
+												<div class="reviews__btn">
+													<a href="#" class="btn btn__black btn__link">Подробнее</a>
+												</div>
+											</div>
+										</li>
+										<li class="reviews__item">
+											<div class="reviews__photo" style="background-image: url(img/p1.jpg);"></div>
+											<div class="reviews__info">
+												 <div class="reviews__title">Test Testovic</div>
+												<div class="reviews__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione temporibus culpa impedit sapiente voluptas fugiat, 
+														veniam quaerat nostrum similique aliquam delectus rem incidunt molestiae natus praesentium.
+												 </div>
+												 <div class="reviews__btn">
+													<a href="#" class="btn btn__black btn__link">Подробнее</a>
+												</div>
+											</div>
+										</li>
+						</ul>
+				
+				</section>
+
+
+		<section class="section section_order" data-anchor="order">
+			<div class="container container_order">
+				
+				<form action="server.php" method="post" id="order-form">
+						<h2 class="section-title section-title_order">Закажите доставку</h2>
+						<div class="order-form__wrap">
+							<div class="order-form__col">
+								<div class="order-form__row">
+									<label class="order-form__label-wrap" for="name">
+										<div class="order-form__lebel">Имя</div>
+										<input type="text" name="name" id="name" class="order-form__input">
+									</label>
+									<label class="order-form__label-wrap" for="phone">
+										<div class="order-form__lebel">Телефон</div>
+										<input type="text" name="phone" id="phone" class="order-form__input">
+									</label>
+								</div>
+								<div class="order-form__row">
+									<label class="order-form__label-wrap" for="street" >
+										<div class="order-form__lebel">Улица</div>
+										<input type="text" name="street" id="street" class="order-form__input">
+									</label>
+								</div>
+								<div class="order-form__row">
+									<label class="order-form__label-wrap" for="home">
+										<div class="order-form__lebel">Дом</div>
+										<input type="text" name="home" id="home" class="order-form__input">
+									</label>
+									<label class="order-form__label-wrap" for="part">
+										<div class="order-form__lebel">Корпус</div>
+										<input type="text" name="part" id="part" class="order-form__input">
+									</label>
+									<label class="order-form__label-wrap" for="appartment">
+										<div class="order-form__lebel">Квартира</div>
+										<input type="text" name="appartament" id="appartment" class="order-form__input">
+									</label>
+									<label class="order-form__label-wrap order-form__label-wrap--floor" for="floor">
+										<div class="order-form__lebel">Этаж</div>
+										<input type="text" name="floor" id="floor" class="order-form__input">
+									</label>				
+								</div>
+			
+							</div>
+							<div class="order-form__col">
+								<div class="order-form__row">
+									<label class="order-form__label-wrap" for="comment">
+										<div class="order-form__lebel">Комментарий</div>
+										<textarea name="comment" id="comment" class="order-form__textarea"></textarea>
+									</label>
+								</div>
+								<div class="order-form__row">
+									<label class="order-form__radio" for="cash">
+										<input class="order-form__radio-elem" name="payment" value="потребуется сдача" id="cash" type="radio">
+										<div class="order-form__radio-fake"></div>
+										<div class="order-form__radio-title">Потребуется сдача</div>
+									</label>
+									<label class="order-form__radio" for="card">
+										<input class="order-form__radio-elem" name="payment" value ="оплата картой" id="card" type="radio">
+										<div class="order-form__radio-fake"></div>
+										<div class="order-form__radio-title">Оплата картой</div>
+									</label>
+								</div>
+								<div class="order-form__row">
+									<label class="order-form__radio order-form__radio_checkbox" for="callback">
+									<input class="order-form__radio-elem" name="callback" id="callback" type="checkbox" value="0">
+									<div class="order-form__radio-fake"></div>
+									<div class="order-form__radio-title">Не перезванивать</div>
+								  </label>
+								</div>
+								<div class="order-form__row">
+									<div class="order-form__btn-group">
+										<button type="submit" class="btn" id="btn_submit">заказать</button>
+										<button type="reset" class="btn btn_transparent">очистить</button>	
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="section section_contacts" data-anchor="contacts">
+					<div id = "map2" >
+
+					</div>
+				<footer class="footer">
+					<div class="footer__container">
+					<div class="footer__contacts">
+						<div class="footer__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+						<div class="footer__phone">+7 (812) 377-13-77</div>
+					</div>
+					<div class="footer__socials">
+						<span class="footer__icon icon-vk"></span>
+						<span class="footer__icon icon-twitter"></span>
+						<span class="footer__icon icon-inst"></span>
+						<span class="footer__icon icon-fb"></span>
+
+					</div>
+				</div>
+				</footer>
+			  </section>
+<nav class="mob-menu">
+	<a href="#" id="mob-menu__close" class="mob-menu__close">
+		<i class="icon-close"></i>
+	</a>
+	<ul id="mob-menu__list" class="mob-menu__list">
+		<li class="mob-menu__item">
+			<a href="" class="mob-menu__link">О нас</a>
+		</li>
+		<li class="mob-menu__item">
+			<a href="" class="mob-menu__link">Бургеры</a>
+		</li>
+		<li class="mob-menu__item">
+			<a href="" class="mob-menu__link">Команда</a>
+		</li>
+		<li class="mob-menu__item">
+			<a href="" class="mob-menu__link">Меню</a>
+		</li>
+		<li class="mob-menu__item">
+			<a href="" class="mob-menu__link">Отзывы</a>
+		</li>
+		<li class="mob-menu__item">
+			<a href="" class="mob-menu__link">Контакты</a>
+		</li>
+	</ul>
+</nav>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/map.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
