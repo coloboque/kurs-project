@@ -282,7 +282,7 @@ body {
   background: transparent; }
 
 #fp-nav {
-  top: 100px !important;
+  top: 150px !important;
   right: 100px; }
   #fp-nav span {
     background: transparent !important; }
@@ -371,6 +371,40 @@ body {
     position: absolute;
     top: 5%;
     right: 5%; }
+
+.modal {
+  position: absolute;
+  /* Stay in place */
+  z-index: 100000000001;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black w/ opacity */ }
+  .modal__wrap {
+    width: 30%;
+    z-index: 1000000000002;
+    opacity: 1;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    margin: 0 auto;
+    top: 25%; }
+  .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .modal__content .reviews__text, .modal .reviews__title {
+    color: black !important; }
 
 .section_welcome {
   background-image: url("../img/welcome-bg.jpg");
@@ -1374,16 +1408,20 @@ body {
       height: 100%;
       min-width: 380px; } }
   .slider__list {
-    height: 100%;
+    height: 50%;
+    width: 90%;
+    margin: 0 auto;
     overflow: hidden; }
+    @media screen and (max-width: 768px) {
+      .slider__list {
+        height: 100%; } }
   .slider__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
     width: 100%;
-    height: 100%;
-    float: left; }
+    height: 100%; }
     @media screen and (max-width: 768px) {
       .slider__item {
         -webkit-box-orient: vertical;
@@ -1396,6 +1434,9 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; } }
+    @media screen and (max-width: 480px) {
+      .slider__item {
+        padding: 0; } }
   .slider__col {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1413,7 +1454,7 @@ body {
     padding: 15px; }
     @media screen and (max-width: 768px) {
       .slider__col {
-        height: 50%;
+        height: 40%;
         min-width: 400px; } }
   @media screen and (max-width: 768px) and (max-width: 480px) {
     .slider__col {
@@ -1467,25 +1508,16 @@ body {
     font-size: 4.5rem;
     font-family: 'Gagalin';
     line-height: 1; }
-  .slider__arrow {
-    text-decoration: none;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    z-index: 100; }
-    .slider__arrow_left {
-      left: 25px;
-      -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg); }
-    .slider__arrow_right {
-      right: 25px;
-      -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      transform: rotate(-90deg); }
+  .slider__arrow_left {
+    left: 25px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .slider__arrow_right {
+    right: 25px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
 
 .hamburger-kkal {
   position: absolute;
@@ -1524,9 +1556,37 @@ body {
   text-align: left; }
 
 .icon__drop {
-  font-size: 40px; }
+  font-size: 2.5rem; }
 
 .icon-buns {
-  font-size: 30px; }
+  font-size: 1.875rem; }
+
+.fp-controlArrow {
+  width: 30px !important;
+  height: 30px !important;
+  text-decoration: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 100;
+  font-size: 20px;
+  border: none !important; }
+
+.fp-next {
+  background: url("../icons/arrow-scroll.svg");
+  -webkit-transform: rotate(-90deg) !important;
+  -ms-transform: rotate(-90deg) !important;
+  transform: rotate(-90deg) !important;
+  background-repeat: no-repeat; }
+
+.fp-prev {
+  background: url("../icons/arrow-scroll.svg");
+  -webkit-transform: rotate(90deg) !important;
+  -ms-transform: rotate(90deg) !important;
+  transform: rotate(90deg) !important;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=main.css.map */

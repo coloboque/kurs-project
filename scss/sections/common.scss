@@ -37,7 +37,7 @@
 	}
 
 #fp-nav {
-    top: 100px !important;
+    top: 150px !important;
     right: 100px;
     & span{
         background: transparent !important;
@@ -78,14 +78,7 @@
         }
     }
 }
-
-
-
-
-
-
     .mob-menu{
-        // display: none;
         position: fixed;
         display: flex;
         justify-content: center;
@@ -145,3 +138,41 @@
         }
     }
 
+
+    .modal{
+    position: absolute; /* Stay in place */
+    z-index: 100000000001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7s); /* Black w/ opacity */
+ 
+
+    &__wrap{
+        width: 30%;
+        z-index: 1000000000002; 
+        opacity:1;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 15px;
+        position: relative; 
+        margin: 0 auto;
+        top: 25%;
+    }
+       &__close{
+            position: absolute;
+            top: 10px;
+            right: 10px; 
+          }
+          &__content .reviews__text, .reviews__title{
+            color: black !important;
+          }
+    }
+  
+
+       
+    
+      

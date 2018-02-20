@@ -42,7 +42,27 @@ $('.mob-menu__close').click(function(){
 });
 
 
+$('.reviews__btn').click(function() {
+    $('.modal').toggle();
+    $('.modal__content').empty();
+    let $a =  $(this).siblings(".reviews__text");
+    let $b =  $(this).siblings(".reviews__title");
+    let $c = $a.clone();  
+    let $d = $b.clone() ;
+    let $e = $c+$d;
+    $('.modal__content').append($d, $c);
+    
+   
+  });
+ 
+  $('.modal__close').click(function() {
+    $('.modal').toggle();
+  });
 
+
+$(document).ready(function(){
+  $('body').append($overlay, $modal);
+});
 
 $('#order-form').on('submit', submitForm);
 

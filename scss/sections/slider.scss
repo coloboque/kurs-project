@@ -24,35 +24,6 @@
 
 }
 
-// .hamburger-kkal{
-//     position: absolute;
-//     display: inline-block;
-//     bottom: 0;
-//     left: 0;
-//     font-size: 60px;
-//     @include tablets{
-//         left: auto;
-//     bottom: auto;
-//     right: 0;
-//     top: 0;
-//     }
-//     .icon-kkal{
-//         font-size: 60px;
-//     }
-//     &__num {
-//         position: relative;
-//         font-family: 'Gagalin';
-//         color: #fff;
-//         font-size: 20px;
-//         margin-bottom: 10px;
-//     }
-//     &__text{
-//         position: relative;
-//     font-family: 'Gagalin';
-//     color: #fff;
-//     font-size: 14px;
-//     }
-// }
 
 .composition{
     position: absolute;
@@ -128,8 +99,13 @@
     }
 
 	&__list {
-		height: 100%;
+		height: 50%;
+		width: 90%;
+		margin: 0 auto;
 		overflow: hidden;
+		@include tablets{
+			height: 100%;
+		}
 	}
 
 	&__item {
@@ -137,14 +113,16 @@
 		position: relative;
 		width: 100%;
 		height: 100%;
-		float: left;
-
 
 		@include tablets() { 
 			flex-direction: column; 
 			justify-content: center; 
 			align-items: center;
 		}		
+
+		@include phones{
+			padding:0;
+		}
 	}
 
 	&__col {
@@ -157,7 +135,7 @@
 		padding: 15px;
 
 		@include tablets() { 
-            height:50%;
+            height:40%;
             min-width: 400px;
             @include phones{
                 width: 80%;
@@ -194,7 +172,6 @@
 	}
 
 	&__text {
-		// font-family: 'UbuntuLight';
 		font-size: rem(14px);
 		line-height: 2;
 		color: #fff;
@@ -236,12 +213,7 @@
 	}
 
 	&__arrow {
-        text-decoration: none;
-		position: absolute;
-		width: 30px;
-		height: 30px;
-		transform: translate(0 , -50%);
-		z-index: 100;
+
 		
 		
 		
@@ -309,9 +281,35 @@
 }
 
 .icon__drop{
-    font-size: 40px;
+    font-size: rem(40px);
 }
 
 .icon-buns{
-    font-size: 30px;
+    font-size: rem(30px);
+}
+
+.fp-controlArrow{
+	width: 30px !important;
+	height: 30px !important;
+	text-decoration: none;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	transform: translate(0 , -50%);
+	z-index: 100;
+	font-size: 20px;
+	border: none !important;
+}
+
+.fp-next{
+	background: url('../icons/arrow-scroll.svg');
+	transform: rotate(-90deg) !important;
+	background-repeat: no-repeat;
+	
+}
+
+.fp-prev{
+	background: url('../icons/arrow-scroll.svg');
+	transform: rotate(90deg) !important;
+	background-repeat: no-repeat;
 }

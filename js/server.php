@@ -7,7 +7,7 @@
     $part = $_POST['part'];
     $appartment = $_POST['appartment'];
     $floor = $_POST['floor'];
-    $pay = $_POST['payment'];
+    $payment = $_POST['payment'];
     $comment = $_POST['comment'];
 
 
