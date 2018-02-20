@@ -10,4 +10,4 @@ https://codepen.io/coloboque/pen/MQvaxP (javascript - открыт всегда 
 https://codepen.io/coloboque/pen/NyaWQv (jQuery - открыт всегда 1 пункт, и его можно закрыть)
 https://codepen.io/coloboque/pen/KQZYQv  (1 пункт всегда открыт)
 --------------------------
-url http://shop.yarkoyarko.ru/burger
+url http://yarkoyarko.ru/burger/
